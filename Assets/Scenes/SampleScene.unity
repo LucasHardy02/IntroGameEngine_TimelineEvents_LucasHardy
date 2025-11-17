@@ -501,7 +501,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 30c7788efc7846043ab17868385bcbd3, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -613,6 +613,7 @@ GameObject:
   - component: {fileID: 398343433}
   - component: {fileID: 398343432}
   - component: {fileID: 398343431}
+  - component: {fileID: 398343435}
   m_Layer: 0
   m_Name: Trigger
   m_TagString: Untagged
@@ -709,6 +710,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &398343435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398343430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 030b3c97ac7ca424490648354decd432, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  director: {fileID: 1985034433}
 --- !u!1 &402675921
 GameObject:
   m_ObjectHideFlags: 0
@@ -968,7 +982,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 497d82a5eefd1634899688ca43f0ecf5, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1081,7 +1095,7 @@ GameObject:
   - component: {fileID: 520583024}
   - component: {fileID: 520583023}
   m_Layer: 0
-  m_Name: Material__28
+  m_Name: Spongebob
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1177,6 +1191,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -39.35, z: 0}
+--- !u!1 &586307221
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 586307222}
+  m_Layer: 0
+  m_Name: SpongebobParent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &586307222
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 586307221}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 31.659748, y: -2.0055408, z: 0.90274316}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &614432520 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: bfce3499e085a794999826cca0e52f0a, type: 3}
@@ -1496,7 +1541,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: bfce3499e085a794999826cca0e52f0a, type: 3}
       propertyPath: m_Name
-      value: squidward_bind_01
+      value: Squidward
       objectReference: {fileID: 0}
     - target: {fileID: 1986269073722956157, guid: bfce3499e085a794999826cca0e52f0a, type: 3}
       propertyPath: m_IsActive
@@ -1606,7 +1651,7 @@ PlayableDirector:
   m_Enabled: 1
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: 51c179e210a97a545a88214c0509101f, type: 2}
-  m_InitialState: 1
+  m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
@@ -1885,3 +1930,4 @@ SceneRoots:
   - {fileID: 1985034434}
   - {fileID: 360895183}
   - {fileID: 471618779}
+  - {fileID: 586307222}
